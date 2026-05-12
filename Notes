@@ -58,3 +58,11 @@ Difference b/w command mode & Insert mode :  If we perform command mode keys we 
 
 grep command:-- grep stands from global regular expression print. It's a command line utility in linux used to search for the pattrens
 in textusing regular expressions.It's prints the matching lines.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+apt ---> It is for download the ubantu 
+yum or dnf ---> redhat, maven, Git.....  ex: sudo yum install Git
+wget URL link --->
+curl api link ---> 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
