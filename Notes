@@ -12,6 +12,10 @@ what IT's used for?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Open-source s/w:- Computer s/w that makes it source code publicy avaliable, allowing anyone to view,modify distribute &use it freely under
                   a specific open-source license.
+Operating System (OS):--An OS is a software that acts as an interface between computer hardware components & the user.Every computer system
+                        must have at least one OS to run other programs.Applications like browsers,MS.Office,Notepad Games,etc...
+                        need some environment to run & perform its tasks
+    ex:  Window ,Linux , Mac
 Embedded System:- A specialized computer with a dedicated function,intergrated into a large mechanical or electronic device.
 Kernel:-- It is the core or the heart of the opearating system. It's the centeral part that manages & facilitates communication b/w the computers H/w & S/w.
 Shell:-- A shellnthat allows users to interact with the operating system. There are two types of shell.
