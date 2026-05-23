@@ -4,6 +4,7 @@ Assisted in server patching, log monitoring, and troubleshooting issues.
 Automated routine server health checks with Shell scripts.
 
 Day-1:----   [ Linux Basics + Commands ]
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Linux basics
 
 1. What is Linux?
@@ -42,4 +43,47 @@ Windows :---
 * Car wipers
 * Artifical intellegence
 * Machine learing
+-------------------------------------------------------------------------------------------------------------------------------------
+Linux Commands
+
+Directory commands:
+
+touch filename1                           = Create a file
+touch filename2 filename3 filename4       = Create multiple files
+touch -d "yyyy-mm-dd hh:mm:ss" filename   = Change file date & time
+touch .filename                           = Create a hidden file
+touch .filename1 .filename2               = Create multiple hidden files
+mv filename1 .filename2                   = Convert normal file to hidden file
+
+List of files
+
+ls                = List non-hidden files and directories
+ls -l             = Long format listing
+ls -lt            = Sort by time (latest first)
+ls -lrt           = Sort by time (oldest first)
+ls -lrth          = Reverse time order with human-readable size
+ls -al            = Show all files including hidden
+ls -il            = Show inode numbers
+ls -l | grep abc  = Filter specific file
+ll                = Alias for ls -alF
+ls -al [Fm]*      = Files starting with F or m
+ls -al [!Fm]*     = Files not starting with F or m
+ls -l f*          = Files starting with f
+ls -al ??         = Files with exactly 2 characters
+
+mkdir dir           = Create a directory
+mkdir d1 d2 d3      = Create multiple directories
+mkdir -p a/b/c      = Create nested directories
+mkdir -m 755 dir    = Set permissions at creation
+
+cd dir_name      = Move into directory
+cd ..            = One level back
+cd               = Go to home
+cd ~             = Go to home
+cd -             = Previous directory
+cd /             = Root directory
+cd ../..         = Two levels up
+cd /path/to/dir  = Absolute path
+cd ~user         = Another user's home
+
 
