@@ -172,108 +172,39 @@ Important Ports:
 * 443 → HTTPS
 * 21 → FTP
 
----
+11. Network Troubleshooting
+Ping Command
+Checks connectivity :ping google.com
+Traceroute
+Checks packet path : traceroute google.com
+Curl
+Tests websites/services : curl http://localhost
 
-# 11. Network Troubleshooting
-
-## Ping Command
-
-Checks connectivity.
-
-```bash
-ping google.com
-```
-
-## Traceroute
-
-Checks packet path.
-
-```bash
-traceroute google.com
-```
-
-## Curl
-
-Tests websites/services.
-
-```bash
-curl http://localhost
-```
-
----
-
-# 12. VMware Networking
-
+12. VMware Networking
 VMware allows virtual machines to communicate.
-
 Network Types:
-
 * NAT
 * Bridged
 * Host-only
 
-## Practical Use
-
+Practical Use
 * Create Linux VM
 * Configure IP
 * Test SSH connection
 
----
+13. Monitoring Network Performance
+Commands
+Check Network Usage : iftop
+Check Connections   : netstat
+Check Routing Table : route -n
 
-# 13. Monitoring Network Performance
+14. Shell Script Automation
+Example script to monitor disk usage: #!/bin/bash df -h > disk_report.txt
+Run: bash script.sh
 
-## Commands
-
-### Check Network Usage
-
-```bash
-iftop
-```
-
-### Check Connections
-
-```bash
-netstat
-```
-
-### Check Routing Table
-
-```bash
-route -n
-```
-
----
-
-# 14. Shell Script Automation
-
-Example script to monitor disk usage:
-
-```bash
-#!/bin/bash
-
-df -h > disk_report.txt
-```
-
-Run:
-
-```bash
-bash script.sh
-```
-
----
-
-# 15. Backup and Recovery
-
-## Backup Using tar
-
-```bash
-tar -cvf backup.tar /home
-```
-
-## Restore
-
-```bash
-tar -xvf backup.tar
+15. Backup and Recovery
+Backup Using tar : tar -cvf backup.tar /home
+Restore : tar -xvf backup.tar
 ```
 
 ---
