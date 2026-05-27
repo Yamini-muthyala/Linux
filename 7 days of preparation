@@ -205,73 +205,46 @@ Run: bash script.sh
 15. Backup and Recovery
 Backup Using tar : tar -cvf backup.tar /home
 Restore : tar -xvf backup.tar
-```
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                        Interview Questions
+1: Difference between TCP and UDP?
+TCP → Reliable
+UDP → Faster but unreliable
 
----
-
-# 16. Common Interview Questions
-
-## Q1: Difference between TCP and UDP?
-
-* TCP → Reliable
-* UDP → Faster but unreliable
-
-## Q2: What is DNS?
-
+2: What is DNS?
 DNS converts domain names into IP addresses.
 
-## Q3: What is SSH?
-
+3: What is SSH?
 SSH provides secure remote server access.
 
-## Q4: How do you check open ports?
-
-```bash
+4: How do you check open ports?
 netstat -tulnp
-```
 
-## Q5: What is a firewall?
-
+5: What is a firewall?
 A firewall controls incoming and outgoing traffic.
 
----
+6: What is Shell?
+Shell is a command-line interpreter between user and operating system.
+Examples:
+Bash : Bash (short for Bourne Again SHell) is a command-line interpreter and scripting language used to interact with a computer's operating system
+Ksh  : The ksh command invokes the Korn shell, which is an interactive command interpreter and a command programming language. 
+Zsh  : Zsh (Z shell) is an advanced command-line interpreter for Unix-like operating systems that serves as both an interactive login shell and a powerful scripting language.
 
-# Daily Practice Tasks
+            File System Questions
 
-## Day 1
+7. What is the root directory?
+Root directory is "/" and it is the top-level directory in Linux.
 
-* Install Linux VM
-* Configure IP Address
+8. Difference between absolute and relative path?
+Absolute path: /home/user/file.txt
+Relative path: documents/file.txt
 
-## Day 2
-
-* Install Apache
-* Access webpage
-
-## Day 3
-
-* Configure SSH
-
-## Day 4
-
-* Practice firewall rules
-
-## Day 5
-
-* Configure FTP
-
-## Day 6
-
-* Create shell scripts
-
-## Day 7
-
-* Practice troubleshooting commands
-
-This knowledge is enough for:
-
-* Linux Administrator interviews
-* Junior System Administrator roles
-* Support Engineer roles
-* Cloud/Linux support positions
+9. Explain important Linux directories.
+Directory	Purpose
+/etc	Configuration files
+/home	User home directories
+/var	Logs and variable data
+/tmp	Temporary files
+/bin	Essential commands
+/opt	Optional software
 
