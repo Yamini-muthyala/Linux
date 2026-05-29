@@ -391,6 +391,71 @@ Using cron jobs.
 How to edit cron jobs?
 crontab -e
 ----------------------------------------------------------------------------------------------------------------------------------
+                                            Web Server Questions
+What is Apache?
+Apache HTTP Server is a web server used to host websites.
+
+What is Nginx?
+Nginx is a lightweight web server and reverse proxy server.
+
+Difference between Apache and Nginx?
+Apache	                                  Nginx
+Process-based	                            Event-driven
+Better dynamic handling	                  Better performance
+
+How to restart Apache?
+systemctl restart httpd
+
+Default web page location in Apache?
+/var/www/html
+------------------------------------------------------------------------------------------------------------------------------------
+                                        Scenario-Based Questions
+Server is slow. What will you check?
+I will check:
+CPU usage
+Memory usage
+Disk space
+Running processes
+Logs
+Network issues
+
+Commands:
+top
+free -m
+df -h
+
+Disk is full. What will you do?
+Check large files
+Clean logs
+Remove temporary files
+Extend disk if needed
+Commands:  du -sh /*
+
+SSH service is down. How to troubleshoot?
+Check ssh service status
+Verify port 22
+Check firewall
+Review logs
+Commands:
+systemctl status sshd
+journalctl -xe
+
+Website is not opening. What will you check?
+Web service status
+Port 80/443
+Firewall
+Logs
+DNS resolution
+
+Explain your automation project.
+I created shell scripts to monitor CPU, memory, and disk usage automatically. The script generated 
+alerts when threshold values exceeded and reduced manual monitoring efforts.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
