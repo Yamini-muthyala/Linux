@@ -451,8 +451,17 @@ Explain your automation project.
 I created shell scripts to monitor CPU, memory, and disk usage automatically. The script generated 
 alerts when threshold values exceeded and reduced manual monitoring efforts.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+                                  Basic Cloud
+What is virtualization?
+Running multiple virtual machines on one physical server.
 
+What is Docker?
+Docker is a containerization platform used to package applications.
 
+Difference between VM and container?
+VM	                    Container
+Full OS	                Shares host OS
+Heavy                  	Lightweight
 
 
 
