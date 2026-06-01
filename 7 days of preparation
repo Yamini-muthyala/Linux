@@ -462,10 +462,91 @@ Difference between VM and container?
 VM	                    Container
 Full OS	                Shares host OS
 Heavy                  	Lightweight
+-------------------------------------------------------------------------------------------------------------------------------------------
+What happens when Linux boots?
+Answer: When a Linux system boots, it follows these stages:
+->BIOS/UEFI initializes hardware.
+->BIOS/UEFI loads the bootloader (GRUB).
+->GRUB loads the Linux kernel into memory.
+->Kernel initializes hardware drivers and mounts the root filesystem.
+->Kernel starts the init process (systemd).
+->systemd starts services and reaches the target state.
+->User gets a login prompt or graphical login screen
 
+Explain the Linux Boot Process?
+Answer:  The Linux boot process consists of:
+BIOS/UEFI:
+      ->Performs hardware checks (POST).
+      ->Finds bootable device.
+GRUB Bootloader:
+      ->Loads the Linux kernel.
+Kernel:
+      ->Initializes CPU, memory, and drivers.
+      ->Mounts the root filesystem.
+systemd (Init Process) :
+      ->PID 1 process.
+      ->Starts required services.
+Login : User can access the system.
 
+What is GRUB?
+Answer: GRUB (Grand Unified Bootloader) is the default bootloader used by Linux systems.
+Functions:
+      ->Loads the Linux kernel.
+      ->Provides a boot menu.
+      ->Supports multiple operating systems.
+Example:
+cat /boot/grub2/grub.cfg
+Interview line:
+GRUB is a bootloader responsible for loading the Linux kernel and initiating the operating system startup process.
 
+What is systemd?
+Answer: systemd is the default init system in modern Linux distributions.
+Functions:
+      ->Starts services during boot.
+      ->Manages system processes.
+      ->Handles logging and service dependencies.
+Commands:
+systemctl status sshd
+systemctl start nginx
+Interview line:
+systemd is the first user-space process (PID 1) responsible for managing services and system initialization.
 
+What is an inode?
+Answer: An inode is a data structure that stores metadata about a file.
+It contains:
+      ->Owner
+      ->Permissions
+      ->File size
+      ->Creation/modification time
+      ->Disk block locations
+It does not contain: File name
+Check inode:ls -i file.txt
+Interview line:
+An inode stores file metadata and points to the actual data blocks on disk.
 
+What is LVM?
+Answer: LVM (Logical Volume Manager) provides flexible disk management.
+Components:
+      ->Physical Volume (PV)
+      ->Volume Group (VG)
+      ->Logical Volume (LV)
+Benefits:
+      ->Online resizing
+      ->Easier storage management
+      ->Snapshots
+Commands:
+pvcreate
+vgcreate
+lvcreate
+Interview line:
+LVM allows dynamic disk resizing and flexible storage management without repartitioning.
 
-
+What is Swap?
+Answer:Swap is disk space used as virtual memory when RAM becomes full.
+Check swap:free -h
+swapon --show
+Benefits:
+      ->Prevents system crashes due to low memory.
+      ->Supports memory-intensive applications.
+Interview line:
+Swap acts as an extension of RAM and is used when physical memory is exhausted.
