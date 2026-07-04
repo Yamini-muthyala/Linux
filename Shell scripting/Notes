@@ -1,3 +1,42 @@
 What is Linux Shell?
 A shell provide an environment to a user to execute commands and interact with kernal.There are different types of shell:
-->
+->bash          ->tsh
+->sh            ->fish
+->ksh           ->zsh
+
+what is current shell type?
+echo $0
+cat /etc/shells
+bash
+
+What is Shell scripting?
+->Shall script consist of set of commands to perform a task.
+->All the commands execute sequentially.
+->Some task like file manipulation, program execution, user interaction, automation of task etc can be done.
+
+Creating first shell scripting.
+#!/bin/bash
+echo "Hello world!"
+commands:
+vi filename   ex: vi 01_bash_shell
+i for insert ; esc ; shift+ ; :wq
+
+what is shebang?
+#!/bin/bash
+
+sending output to terminal...
+echo "Hello world!"
+
+How to run a script?
+bash script_name
+ls -ltr
+chmod u+x script_name     [Execute permission rw-r--r--]
+      (or)
+->Make sure script has execute permission rwx
+->Run using
+      ./script.sh
+      /path/script.sh
+      bash script.sh
+->ctrl+c to terminate.
+->ctrl+z to stop
+/root/script/script_name   (or) bash /root/script/script_name
